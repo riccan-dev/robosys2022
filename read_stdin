@@ -6,7 +6,10 @@ ans = 0
 
 for line in sys.stdin:
     #print(line.rstrip())
-    ans += float(line)
+    try:
+        ans += int(line)
+    except:
+        ans += float(line)
 
 print(ans)
 
