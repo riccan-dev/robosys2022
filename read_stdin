@@ -6,6 +6,7 @@ ans = 0
 
 for line in sys.stdin:
     #print(line.rstrip())
+    line = line.rstrip()
     try:
         ans += int(line)
     except:
